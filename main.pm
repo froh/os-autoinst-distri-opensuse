@@ -310,7 +310,6 @@ sub load_boot_tests(){
         loadtest "installation/qa_net.pm";
     }
     elsif (check_var("BACKEND", "s390x")) {
-        bmwqemu::diag "trying installation/bootloader_s390.pm";
         loadtest "installation/bootloader_s390.pm";
     }
     elsif (get_var("PROXY")) {
